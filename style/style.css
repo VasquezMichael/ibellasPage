@@ -16,12 +16,41 @@ body{
     background-color: #fff
 }
 
+
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
 p{ font-size: 1.25em;}
 
+
 .color-ibellas{
     color: #7BD0F7;
+}
+
+header{
+    opacity: 0.98;
+}
+
+.header a{
+    color: #fff;
+}
+svg{
+    color: #FFF;
+    height: 30px;
+    width: 30px;
+}
+
+.header a:hover{
+    color: #7BD0F7;
+}
+
+#spanIsabel{
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #7BD0F7;
+}
+#spanBendezu{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
 }
 
 button{
@@ -37,52 +66,12 @@ button{
 }
 
 button:hover{
-    background-color:  #ddbfbf;
+    background-color:  #61a9ca;
 }
 
 .container{
     max-width: 1100px;
     margin: auto;
-}
-
-header{
-    background-color: rgb(245, 245, 245);
-    width: 100%;
- 
-}
-
-header .logo{
-    margin: 0;
-    padding: 25px 30px; /* Vertical Horizontal*/
-    font-weight: bold;
-    font-size: 3em;
-    color:  #7BD0F7;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-header .container{
-    display: flex;
-    flex-direction: column;/*Hacemos que se ordene en una colum*/
-    align-items: center;
-}
-
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-
-}
-
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-}
-
-header a:hover{
-    color: #7BD0F7;
 }
 
 #hero{
@@ -92,7 +81,7 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-
+    margin-top: 85px;
     color: #fff;
     background-image: linear-gradient(
         0deg,
@@ -109,13 +98,20 @@ header a:hover{
     font-size: 1.75em;
 }
 
-#somos-ibellas{
-
+#hero a{
+    text-decoration: none;
+    color: #000;
 }
 
 #somos-ibellas .container{
     text-align: center;
     padding: 150px 12px;
+}
+
+#somos-ibellas h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #7BD0F7;
 }
 
 #nuestros-servicios{
@@ -200,7 +196,7 @@ header a:hover{
 
 #form-contact{
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -212,10 +208,10 @@ header a:hover{
     justify-content: center;
     background-color: rgb(245, 245, 245);
     margin: 50px auto;
-    padding: 20px;
+    padding: 10px;
     max-width: 720px;
     min-width: 200px;
-    max-height: 480px;
+    max-height: 490px;
     border: 15px solid  #7BD0F7;
     outline: 3px solid  #7BD0F7;
 }
@@ -237,7 +233,7 @@ header a:hover{
 
 
 .form textarea{
-    min-height: 100px;
+    min-height: 60px;
     resize: none;
 }
 
@@ -251,6 +247,33 @@ header a:hover{
     background: transparent;
     color: #000;
 
+}
+
+
+#redesSociales{
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+
+#redesSociales a {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    transition: transform .5s;
+}
+#redesSociales a:hover{
+    color: #7BD0F7;
+    transform: scale(1.2);
 }
 
 footer{
@@ -276,7 +299,7 @@ footer .container{
     header{
         position: fixed;
         width: 100%;
-        margin-top: -90px;
+        margin-top: 0;
         height: 100px;
     }
 
@@ -293,7 +316,7 @@ footer .container{
     }
 
     #hero{
-        margin-top: 90px;
+        margin-top: 85px;
     }
 
     #somos-ibellas .container{

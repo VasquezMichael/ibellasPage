@@ -125,6 +125,7 @@ button:hover{
 
 }
 
+
 #nuestros-servicios h2{
     margin-top: 0;
     font-size: 3.2em;
@@ -170,6 +171,14 @@ button:hover{
     ,url(/media/corporal.jpg);
 }
 
+.modal-header{
+    background-color: #7BD0F7;
+}
+
+.modal-body{
+    text-decoration: none;
+    border-top: none;
+}
 
 #reserva-turno{
     display: flex;
@@ -359,11 +368,10 @@ footer .container{
         margin-bottom: 30px;
 
     }
-
-    #nuestros-programas h3{
-        margin-top: 0;
-
+    .img-fluid{
+        max-width: 350px;
     }
+
 
     #nuestros-servicios .carta{
         padding: 30px;
